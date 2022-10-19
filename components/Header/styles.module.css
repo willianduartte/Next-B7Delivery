@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  height: 48px;
+}
+
+.leftSide,
+.rightSide {
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSide a,
+.rightSide a {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonTransparent {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #1b1b1b;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #b3b3b3;
+}

@@ -1,0 +1,38 @@
+.container {
+  padding: 50px 24px;
+}
+.header {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #1b1b1b;
+  margin: 28px 0px 40px 0px;
+}
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #1b1b1b;
+  margin-bottom: 32px;
+}
+.subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(27, 27, 27, 0.8);
+  margin: auto;
+  width: 80%;
+  padding-bottom: 40px;
+  border-bottom: 1.5px solid #fb9400;
+  position: relative;
+}
+.line {
+  border-bottom: 1.5px solid #e2e2e2;
+  margin-top: -1.5px;
+}
+.formArea {
+  margin-top: 56px;
+}
+.inputArea {
+  margin-bottom: 32px;
+}
