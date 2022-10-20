@@ -1,7 +1,7 @@
 import styles from './styles.module.css'
 import { useState } from 'react'
 import SearchIcon from './searchIcon.svg'
-import { useAppContext } from '../../contexts/AppContext'
+import { useAppContext } from '../../contexts/app'
 
 type Props = {
   onSearch: (searchValue: string) => void

@@ -1,14 +1,14 @@
 import { ProductItem } from '../../components/ProductItem'
 import { SearchInput } from '../../components/SearchInput'
+import { useAppContext } from '../../contexts/app'
 import styles from '../../styles/Home.module.css'
 import { Banner } from '../../components/Banner'
+import { Product } from '../../types/Product'
+import { Tenant } from '../../types/Tenant'
+import { useEffect, useState } from 'react'
 import { useApi } from '../../libs/useApi'
 import { GetServerSideProps } from 'next'
-import { Tenant } from '../../types/Tenant'
-import { useAppContext } from '../../contexts/AppContext'
-import { useEffect, useState } from 'react'
 import Head from 'next/head'
-import { Product } from '../../types/Product'
 
 const Home = (data: Props) => {
   const { tenant, setTenant } = useAppContext()
