@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import { useApi } from '../../libs/useApi'
 import { GetServerSideProps } from 'next'
 import Head from 'next/head'
+import { Sidebar } from '../../components/Sidebar'
 
 const Home = (data: Props) => {
   const { tenant, setTenant } = useAppContext()
@@ -18,6 +19,7 @@ const Home = (data: Props) => {
   }, [])
 
   const [products, setProducts] = useState<Product[]>(data.products)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
   
   const handleSearch = (searchValue: string) => {
     console.log(searchValue)
@@ -35,11 +37,19 @@ const Home = (data: Props) => {
             <div className={styles.headerSubtitle}>O que deseja pra hoje?</div>
           </div>
           <div className={styles.headerTopRight}>
-            <div className={styles.menuButton}>
+            <div 
+              className={styles.menuButton}
+              onClick={() => setSidebarOpen(true)}
+            >
               <div className={styles.menuButtonLine} style={{backgroundColor: tenant?.mainColor}} ></div>
               <div className={styles.menuButtonLine} style={{backgroundColor: tenant?.mainColor}} ></div>
               <div className={styles.menuButtonLine} style={{backgroundColor: tenant?.mainColor}} ></div>
             </div>
+            <Sidebar 
+              tenant={data.tenant}
+              open={sidebarOpen}
+              onClose={() => setSidebarOpen(false)}
+            />
           </div>
         </div>
         <div className={styles.headerBottom}>
