@@ -10,13 +10,16 @@ import { InputField } from '../../components/InputField'
 import { Button } from '../../components/Button'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useAuthContext } from '../../contexts/auth'
 
 const Login = (data: Props) => {
   const { tenant, setTenant } = useAppContext()
+  const { setToken, setUser } = useAuthContext()
 
   useEffect(() => {
     setTenant(data.tenant)
   }, [])
+
 
   const router = useRouter()
 
@@ -24,7 +27,12 @@ const Login = (data: Props) => {
   const [password, setPassword] = useState('')
 
   const handleSubmit = () => {
-    
+    setToken('1234')
+    setUser({
+      name: 'Willian Duarte de Souza',
+      email: 'willianduartedesouza04@gmail.com'
+    })
+    router.push(`/${data.tenant.slug}`)
   }
 
   const handleSignup = () => {

@@ -42,15 +42,15 @@ export const Quantity = ({color, count, onUpdateCount, min, max, small}:Props) =
         style={{
           backgroundColor: canRemove ? color : '#F2F4F5', 
           color: canRemove ? '#fff' : '#96A3AB',
-          width: small? 42 : 48,
-          height: small? 42 : 48,
+          width: small? 36 : 48,
+          height: small? 36 : 48,
         }}
       >-</div>
       <div 
         className={styles.count}
         style={{
-          width: small? 42 : 48,
-          height: small? 42 : 48,
+          width: small? 36 : 48,
+          height: small? 36 : 48,
           fontSize: small ? 16 : 18
         }}
       >{formatter.formatQuantity(count, 2)}</div>
@@ -60,8 +60,8 @@ export const Quantity = ({color, count, onUpdateCount, min, max, small}:Props) =
         style={{
           backgroundColor: canAdd ? color : '#F2F4F5', 
           color: canAdd ? '#fff' : '#96A3AB',
-          width: small? 42 : 48,
-          height: small? 42 : 48,
+          width: small? 36 : 48,
+          height: small? 36 : 48,
         }}
       >+</div>
     </div>

@@ -1,0 +1,85 @@
+.container {
+  background-color: #fff;
+  padding: 50px 24px;
+}
+
+.productsQt {
+  font-size: 16px;
+  color: #1b1b1b;
+  padding: 20px 0px;
+  margin-top: 14px;
+  border-top: 1.5px solid rgba(27, 27, 27, 0.1);
+  border-bottom: 1.5px solid rgba(27, 27, 27, 0.1);
+}
+
+.shippingArea {
+  margin-top: 32px;
+}
+
+.shippingTitle {
+  color: #6a7d8b;
+  margin-bottom: 16px;
+}
+
+.shippingForm {
+  display: flex;
+  gap: 12px;
+}
+
+.shippingInfo {
+  background: #f9f9fa;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 24px 32px;
+}
+
+.shippingAddress {
+  font-size: 10px;
+  line-height: 12px;
+  color: #6a7d8b;
+}
+
+.shippingTime {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.shippingTimeText {
+  color: #1b1b1b;
+}
+
+.shippingTimePrice {
+  font-weight: 600;
+  color: #1b1b1b;
+}
+
+.resumeArea {
+  background-color: #f9f9fb;
+  border-radius: 8px;
+  padding: 48px 32px;
+  margin-top: 16px;
+}
+.resumeItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.resumeItemLeft {
+  color: #1b1b1b;
+}
+.resumeItemRight {
+  color: #1b1b1b;
+  font-weight: 500;
+}
+.resumeItemRightBig {
+  font-weight: 600;
+  font-size: 24px;
+}
+.resumeLine {
+  border-top: 1px dashed #96a3ab;
+  margin-block: 28px;
+}
+.resumeButton {
+  margin-top: 40px;
+}
