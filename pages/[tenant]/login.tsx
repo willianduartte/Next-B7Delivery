@@ -20,7 +20,6 @@ const Login = (data: Props) => {
     setTenant(data.tenant)
   }, [])
 
-
   const router = useRouter()
 
   const [email, setEmail] = useState('')
